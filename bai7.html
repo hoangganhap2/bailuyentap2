@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseFloat(prompt("Nhập vào số a"));
+    let b=parseFloat(prompt("Nhập vào số b"));
+    let c=parseFloat(prompt("Nhập vào số c"));
+    let x;
+    let x1;
+    let x2;
+    delta=(b*b)-(4*a*c);
+    if(a-b+c==0){
+        x1=-1;
+        x2=(-c)/a;
+        document.write("X1 = "+x1);
+        document.write(" ");
+        document.write("X2 = "+x2);
+    }else if(a!=0 && delta==0){
+        x=x1=x2=-b/(2*a)
+        document.write("Phương trình có nghiệm kép x1 = x2 =  "+x);
+    }else if(a!=0 && delta>0){
+        x1=((-b)+Math.sqrt(delta))/((2*a));
+        x2=((-b)-Math.sqrt(delta))/((2*a));
+        document.write("X1= "+x1);
+        document.write(" ");
+        document.write("X2= "+x2);
+    }else if(a+b+c==0){
+        x1=1;
+        x2=c/a;
+        document.write("X1= "+x1);
+        document.write(" ");
+        document.write("X2="+x2);
+    }else {
+        delta<0;
+        document.write("Phương trình vô nghiệm");
+    }
+</script>
+</body>
+</html>

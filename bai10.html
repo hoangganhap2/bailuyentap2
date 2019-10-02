@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kWh=parseFloat(prompt("Số điện kWh điện sử dụng"));
+    let money;
+    if (kWh>0 && kWh<=50){
+        money=kWh*1600;
+        document.write("Số tiền điện là "+money);
+    }else if(kWh>=51 && kWh<=100){
+        money=kWh*1700;
+        document.write("Số tiền điện là "+money);
+    }else if(kWh>=101 && kWh<=200){
+        money=kWh*2000;
+        document.write("Số tiền điện là "+money);
+    }else if(kWh>=201 && kWh<=300){
+        money=kWh*2500;
+        document.write("Số tiền điện là "+money);
+    }else if(kWh>=301 && kWh<=400){
+        money=kWh*2800;
+        document.write("Số tiền điện là "+money);
+    }else {
+        money=kWh*3000;
+        document.write("Số tiền điện là "+money);
+    }
+</script>
+</body>
+</html>
