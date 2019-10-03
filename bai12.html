@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h>Số tiền ban đầu đã vay VND</h>
+</br>
+<input id="box1" type="number".value>
+</br></br>
+<h>Số tháng đã vay</h>
+</br>
+<input id="box2" type="number".value>
+</br></br>
+<h>Lãi xuất hàng tháng %</h>
+</br>
+<input id="box3" type="number".value>
+</br></br>
+<button type="button"  onclick="tienlai()">Tính Lãi</button>
+
+<script>
+    function tienlai() {
+        let money=parseInt(document.getElementById("box1").value);
+        let month=parseInt(document.getElementById("box2").value);
+        let interrate=parseInt(document.getElementById("box3").value);
+        let intermoney=0;
+        intermoney=money*Math.pow((1+interrate/100),month);
+        document.write("Số tiền lãi ngân hàng "+intermoney);
+    }
+</script>
+</body>
+</html>
