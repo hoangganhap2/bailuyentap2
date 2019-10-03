@@ -21,9 +21,9 @@
 
 <script>
     function tienlai() {
-        let money=parseInt(document.getElementById("box1").value);
-        let month=parseInt(document.getElementById("box2").value);
-        let interrate=parseInt(document.getElementById("box3").value);
+        let money=parseFloat(document.getElementById("box1").value);
+        let month=parseFloat(document.getElementById("box2").value);
+        let interrate=parseFloat(document.getElementById("box3").value);
         let intermoney=0;
         intermoney=money*Math.pow((1+interrate/100),month);
         document.write("Số tiền lãi ngân hàng "+intermoney);
